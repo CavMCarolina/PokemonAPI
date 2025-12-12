@@ -8,15 +8,16 @@
 }
 
 body {
-    background-color: #333333;
+    background-color: #272727;
 
     img {
         width: 200px;
         margin: 20px;
     }
 
-    div {
-        @include mixins.flex();
+    .container {
+        @include mixins.flex(center);
+        gap: 10px;
     }
 
     h1 {
@@ -27,5 +28,46 @@ body {
     h2, p, input {
         color: variables.$cor_clara;
         letter-spacing: 2px;
+    }
+
+    .input {
+        @include mixins.flex(space-between, row);
+        background-color: #4949498c;
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 60%;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+        input, button {
+            border: none;
+            background: none;
+        }
+
+        input {
+            width: 100%;
+            color: variables.$cor_clara;
+            font-size: 16px;
+
+            &::placeholder {
+                color: variables.$cor_clara;
+                font-size: 16px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(-3px) scale(1.05);
+            }
+        }
+
+        img {
+            width: 100px;
+        }
     }
 }

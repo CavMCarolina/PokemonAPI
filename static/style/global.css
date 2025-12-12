@@ -5,17 +5,18 @@
 }
 
 body {
-  background-color: #333333;
+  background-color: #272727;
 }
 body img {
   width: 200px;
   margin: 20px;
 }
-body div {
+body .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 10px;
 }
 body h1 {
   color: #FFCA02;
@@ -24,4 +25,44 @@ body h1 {
 body h2, body p, body input {
   color: #d4e3fa;
   letter-spacing: 2px;
+}
+body .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(73, 73, 73, 0.5490196078);
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 60%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+body .input input, body .input button {
+  border: none;
+  background: none;
+}
+body .input input {
+  width: 100%;
+  color: #d4e3fa;
+  font-size: 16px;
+}
+body .input input::-moz-placeholder {
+  color: #d4e3fa;
+  font-size: 16px;
+}
+body .input input::placeholder {
+  color: #d4e3fa;
+  font-size: 16px;
+}
+body .input input:focus {
+  outline: none;
+}
+body .input button {
+  transition: all 0.3s ease;
+}
+body .input button:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+body .input img {
+  width: 100px;
 }/*# sourceMappingURL=global.css.map */
