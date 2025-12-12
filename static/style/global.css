@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Schoolbell", cursive;
+}
+
+body {
+  background-color: #333333;
+}
+body img {
+  width: 200px;
+  margin: 20px;
+}
+body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body h1 {
+  color: #FFCA02;
+  letter-spacing: 3px;
+}
+body h2, body p, body input {
+  color: #d4e3fa;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=global.css.map */

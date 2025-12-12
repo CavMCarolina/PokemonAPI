@@ -1,0 +1,31 @@
+@use 'variables';
+@use 'mixins';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Schoolbell", cursive;
+}
+
+body {
+    background-color: #333333;
+
+    img {
+        width: 200px;
+        margin: 20px;
+    }
+
+    div {
+        @include mixins.flex();
+    }
+
+    h1 {
+        color: variables.$cor_primaria;
+        letter-spacing: 3px;
+    }
+
+    h2, p, input {
+        color: variables.$cor_clara;
+        letter-spacing: 2px;
+    }
+}
