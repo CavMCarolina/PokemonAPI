@@ -16,7 +16,8 @@ body .container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  margin: 70px auto;
 }
 body h1 {
   color: #FFCA02;
@@ -44,15 +45,16 @@ body .input input, body .input button {
 body .input input {
   width: 100%;
   color: #d4e3fa;
-  font-size: 16px;
+  font-size: 18px;
+  padding: 5px;
 }
 body .input input::-moz-placeholder {
   color: #d4e3fa;
-  font-size: 16px;
+  font-size: 18px;
 }
 body .input input::placeholder {
   color: #d4e3fa;
-  font-size: 16px;
+  font-size: 18px;
 }
 body .input input:focus {
   outline: none;
@@ -68,4 +70,9 @@ body .input img {
 }
 body .resposta {
   color: #d4e3fa;
+  margin-top: 20px auto;
+  max-width: 60%;
+}
+body .resposta p, body .resposta li {
+  font-size: 18px;
 }/*# sourceMappingURL=global.css.map */

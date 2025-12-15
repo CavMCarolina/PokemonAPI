@@ -1,6 +1,6 @@
 <body>
     <head>
-        <title>Assistente Pokémon</title>
+        <title>Pokibot | Assistente Pokémon</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,7 +15,7 @@
     </head>
     <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="Logo Pokémon"/>
     <div class="container">
-        <h1>Olá, eu sou o Pokente!</h1>
+        <h1>Olá, eu sou o Pokibot!</h1>
         <h2>Seu assistente virtual para tudo sobre Pokémon. Me pergunte qualquer coisa!</h2>
         <form method="POST" class="input">
             <input type="text" id="user-input" name="pergunta" placeholder="Digite sua pergunta aqui..." required />
@@ -28,7 +28,7 @@
         {% if resposta %}
             <div class="resposta">
                 <h2>Resposta:</h2>
-                {{ resposta|safe }}
+                <p>{{ resposta|safe }}</p>
             </div>
         {% endif %}
     </div>

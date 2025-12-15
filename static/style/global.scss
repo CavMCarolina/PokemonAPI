@@ -17,7 +17,8 @@ body {
 
     .container {
         @include mixins.flex(center);
-        gap: 10px;
+        gap: 20px;
+        margin: 70px auto
     }
 
     h1 {
@@ -46,11 +47,12 @@ body {
         input {
             width: 100%;
             color: variables.$cor_clara;
-            font-size: 16px;
+            font-size: 18px;
+            padding: 5px;
 
             &::placeholder {
                 color: variables.$cor_clara;
-                font-size: 16px;
+                font-size: 18px;
             }
 
             &:focus {
@@ -73,5 +75,11 @@ body {
 
     .resposta {
         color: variables.$cor_clara;
+        margin-top: 20px auto;
+        max-width: 60%;
+
+        p, li {
+            font-size: 18px;
+        }
     }
 }
